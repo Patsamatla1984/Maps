@@ -1,0 +1,5 @@
+streamlit
+googlemaps
+pandas
+numpy
+scikit-learn
