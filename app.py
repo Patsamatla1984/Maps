@@ -30,7 +30,7 @@ This app geocodes addresses, clusters them by driving time using DBSCAN, and all
 # --- Sidebar Inputs ---
 st.sidebar.header("Configuration")
 # Try to get API key from Azure Web App configuration (environment variable)
-api_key = "AIzaSyDOJnxLg4A7joiItXeUFpkK5v_c-wi8xfw"  #os.environ.get("GOOGLE_MAPS_API_KEY")
+api_key = os.environ.get("GOOGLE_MAPS_API_KEY")
 if not api_key:
     api_key = st.sidebar.text_input("Google Maps API Key", type="password")
 else:
